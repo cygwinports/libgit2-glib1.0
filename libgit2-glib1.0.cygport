@@ -1,0 +1,21 @@
+ORIG_PN="libgit2-glib"
+inherit gnome2 python3
+
+NAME="libgit2-glib1.0"
+VERSION=0.0.16
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="GObject interface to libgit2"
+DESCRIPTION="libgit2-glib is a glib wrapper library around the libgit2 git
+access library. libgit2 only implements the core plumbing functions, not
+really the higher level porcelain stuff. For a primer on Git Internals that
+you will need to know to work with Git at this level, check out Chapter 9 of
+the Pro Git book."
+
+PKG_NAMES="${NAME}_0 ${NAME}-devel ${NAME}-doc girepository-Ggit1.0"
+libgit2_glib1_0_0_CONTENTS="usr/bin/cyggit2-glib-1.0-0.dll usr/share/doc/"
+libgit2_glib1_0_devel_CONTENTS="usr/include/libgit2-glib-1.0/
+	usr/lib/libgit2-glib-1.0.dll.a
+	usr/lib/pkgconfig/libgit2-glib-1.0.pc"
+libgit2_glib1_0_doc_CONTENTS="usr/share/gtk-doc/"
+girepository_Ggit1_0_CONTENTS="usr/*/gir*-1.0/Ggit-1.0.* ${PYTHON3_SITELIB#/}/gi/overrides/"
