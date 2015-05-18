@@ -2,8 +2,8 @@ ORIG_PN="libgit2-glib"
 inherit gnome2 python3
 
 NAME="libgit2-glib1.0"
-VERSION=0.0.24
-RELEASE=2
+VERSION=0.22.8
+RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GObject interface to libgit2"
 DESCRIPTION="libgit2-glib is a glib wrapper library around the libgit2 git
