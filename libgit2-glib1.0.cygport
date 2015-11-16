@@ -2,7 +2,7 @@ ORIG_PN="libgit2-glib"
 inherit gnome2 python3
 
 NAME="libgit2-glib1.0"
-VERSION=0.22.8
+VERSION=0.23.6
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GObject interface to libgit2"
@@ -14,6 +14,7 @@ the Pro Git book."
 
 PKG_NAMES="${NAME}_0 ${NAME}-devel ${NAME}-doc girepository-Ggit1.0 vala-ggit1.0"
 libgit2_glib1_0_0_CONTENTS="usr/bin/cyggit2-glib-1.0-0.dll usr/share/doc/"
+libgit2_glib1_0_devel_REQUIRES="girepository-Ggit1.0 vala-ggit1.0"
 libgit2_glib1_0_devel_CONTENTS="usr/include/libgit2-glib-1.0/
 	usr/lib/libgit2-glib-1.0.dll.a
 	usr/lib/pkgconfig/libgit2-glib-1.0.pc"
