@@ -2,7 +2,7 @@ ORIG_PN="libgit2-glib"
 inherit gnome2 python3
 
 NAME="libgit2-glib1.0"
-VERSION=0.23.6
+VERSION=0.23.10
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GObject interface to libgit2"
